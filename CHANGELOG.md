@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.3...v1.0.4) (2025-04-17)
+
+
+### Bug Fixes
+
+* cambio la ruta del directorio en el server ([7921c20](https://github.com/felixbarrosdev/felixbarros/commit/7921c202aed14e260cf96f2165ab40e99d9a363a))
+
 ## [1.0.3](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.2...v1.0.3) (2025-04-17)
 
 
