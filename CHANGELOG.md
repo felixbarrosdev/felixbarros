@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.1...v1.0.2) (2025-04-17)
+
+
+### Bug Fixes
+
+* **responsive:** agregar el meta viewport ([6e8df99](https://github.com/felixbarrosdev/felixbarros/commit/6e8df99957f8ee32b04469bd7c31ada992579c43))
+
 ## [1.0.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.0...v1.0.1) (2025-04-17)
 
 
