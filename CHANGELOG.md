@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.5...v1.0.6) (2025-04-17)
+
+
+### Bug Fixes
+
+* server-dir termine en / ([7248b9c](https://github.com/felixbarrosdev/felixbarros/commit/7248b9ce6dc21f0adc870e66bd14a35ea014b6af))
+
 ## [1.0.5](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.4...v1.0.5) (2025-04-17)
 
 
