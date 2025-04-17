@@ -22,3 +22,27 @@ jobs:
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      # Capturamos el tag creado para el job de deploy
+      - name: Set new_tag output
+        if: success()
+        run: echo "new_tag=${{ steps.semantic_release.outputs.nextRelease.gitTag }}" >> $GITHUB_OUTPUT
+  
+  deploy_ftp:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      # 1) Checkout exactamente el código del tag recién creado
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.release.outputs.new_tag }}
+
+      # 2) Deploy via FTP (usa la acción de SamKirkland)
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: './'                     # carpeta local donde está tu theme
+          server-dir: '/public_html/wp-content/themes/felixbarros'  # ruta en el servidor, tambien se puede suarl el tag como nombre de la carpeta ${{ needs.release.outputs.new_tag }}
