@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.0...v1.0.1) (2025-04-17)
+
+
+### Bug Fixes
+
+* **layout:** remover text-center del título principal ([d295c23](https://github.com/felixbarrosdev/felixbarros/commit/d295c230787c93a087f8d2a53d104ef82a112950))
+
 # 1.0.0 (2025-04-17)
 
 
