@@ -45,4 +45,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: './'                     # carpeta local donde está tu theme
-          server-dir: '/home/u864776022/domains/felixbarros.dev/public_html/wp-content/themes/felixbarros/'  # ruta en el servidor, tambien se puede suarl el tag como nombre de la carpeta ${{ needs.release.outputs.new_tag }}
+          server-dir: '/wp-content/themes/felixbarros'  # ruta en el servidor, tambien se puede suarl el tag como nombre de la carpeta ${{ needs.release.outputs.new_tag }}
