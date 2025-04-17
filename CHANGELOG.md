@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.4...v1.0.5) (2025-04-17)
+
+
+### Bug Fixes
+
+* cambio en la ruta donde se actualiza el theme ([9ec6f11](https://github.com/felixbarrosdev/felixbarros/commit/9ec6f1134d458a69cf1d368bbaa628f83fe0fd9c))
+
 ## [1.0.4](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.3...v1.0.4) (2025-04-17)
 
 
