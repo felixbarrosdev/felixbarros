@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.6...v1.0.7) (2025-04-17)
+
+
+### Bug Fixes
+
+* bump 1.0.7 ([a4e8087](https://github.com/felixbarrosdev/felixbarros/commit/a4e80878d2e91db546b7dc62efc9509f616d2d64))
+
 ## [1.0.6](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.5...v1.0.6) (2025-04-17)
 
 
