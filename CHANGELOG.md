@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.2...v1.0.3) (2025-04-17)
+
+
+### Bug Fixes
+
+* cambiar version de FTP deploy a 4.3.5 ([76b997b](https://github.com/felixbarrosdev/felixbarros/commit/76b997b0e1ba2a240d150b077e65089812c56419))
+
 ## [1.0.2](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.1...v1.0.2) (2025-04-17)
 
 
