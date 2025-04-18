@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="flex-1 flex items-center justify-center px-4">
+<div class="flex-1 flex items-center justify-center p-4">
   <div class="max-w-3xl py-12 text-dark font-body">
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
