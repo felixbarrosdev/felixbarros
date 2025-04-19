@@ -43,7 +43,8 @@ npm install
 3. Compilar Tailwind:
 
 ```bash
-npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --watch
+npm run dev
+npm run build
 ```
 
 4. Activar el tema desde el panel de WordPress
