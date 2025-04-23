@@ -1,11 +1,11 @@
 {
   "name": "felixbarros",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "postcss.config.js",
   "scripts": {
     "prepare": "husky install",
     "test": "echo \"No hay pruebas definidas\" && exit 0",
-    "changelog": "conventional-changelog -p angular -c changelog.config.js -i RELEASE.md -s",
+    "release": "standard-version --config changelog.config.js",
     "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --watch",
     "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --minify"
   },
