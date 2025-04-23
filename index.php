@@ -5,19 +5,21 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <article class="mb-12">
-        <div class="flex flex-col md:flex-row items-start gap-y-4">
+        <div class="flex flex-col md:flex-row items-start gap-4">
           
-        <!-- Imagen destacada -->
-        <?php if (has_post_thumbnail()) : ?>
-          <a href="<?php the_permalink(); ?>" class="md:mr-6">
-            <?php the_post_thumbnail('medium', [
-              'class' => 'w-32 md:w-40 h-auto rounded-lg shadow-md'
-            ]); ?>
-          </a>
-        <?php endif; ?>
+          <!-- Imagen destacada -->
+          <?php if (has_post_thumbnail()) : ?>
+            <div class="flex-shrink-0 w-32 md:w-40 aspect-square overflow-hidden rounded-lg shadow-md md:mr-6">
+              <a href="<?php the_permalink(); ?>" class="block w-full h-full">
+                <?php the_post_thumbnail('medium', [
+                  'class' => 'w-full h-full object-cover'
+                ]); ?>
+              </a>
+            </div>
+          <?php endif; ?>
 
           <!-- Contenido -->
-          <div>
+          <div class="flex-1">
             <h2 class="text-2xl md:text-3xl font-title font-bold mb-2">
               <a href="<?php the_permalink(); ?>" class="text-primary hover:text-accent transition-colors">
                 <?php the_title(); ?>
