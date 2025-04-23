@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme Standard">
+  <description>PHPCS para el theme felixbarros</description>
+
+  <!-- Regla principal -->
+  <rule ref="WordPress"/>
+
+  <!-- Extensiones analizadas -->
+  <arg name="extensions" value="php"/>
+
+  <!-- Carpeta a analizar -->
+  <file>./</file>
+
+  <!-- Excluir carpetas pesadas -->
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>assets/build/*</exclude-pattern>
+  <exclude-pattern>*.min.js</exclude-pattern>
+  <exclude-pattern>*.min.css</exclude-pattern>
+</ruleset>
