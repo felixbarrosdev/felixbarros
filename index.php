@@ -16,31 +16,33 @@ get_header(); ?>
 			the_post();
 			?>
 		<article class="mb-12">
-		<div class="flex flex-col md:flex-row items-start gap-y-4">
+		<div class="flex flex-col md:flex-row items-start gap-4">
 		  
-		<!-- Imagen destacada -->
+			<!-- Imagen destacada -->
 			<?php if ( has_post_thumbnail() ) : ?>
-			<a href="<?php the_permalink(); ?>" class="md:mr-6">
+			<div class="flex-shrink-0 w-32 md:w-40 aspect-square overflow-hidden rounded-lg shadow-md md:mr-6">
+				<a href="<?php the_permalink(); ?>" class="block w-full h-full">
 				<?php
 				the_post_thumbnail(
 					'medium',
 					array(
-						'class' => 'w-32 md:w-40 h-auto rounded-lg shadow-md',
+						'class' => 'w-full h-full object-cover',
 					)
 				);
 				?>
-			</a>
-		<?php endif; ?>
+				</a>
+			</div>
+			<?php endif; ?>
 
 			<!-- Contenido -->
-			<div>
+			<div class="flex-1">
 			<h2 class="text-2xl md:text-3xl font-title font-bold mb-2">
 				<a href="<?php the_permalink(); ?>" class="text-primary hover:text-accent transition-colors">
 				<?php the_title(); ?>
 				</a>
 			</h2>
 			<div class="text-base">
-				<?php the_excerpt(); ?>
+						<?php the_excerpt(); ?>
 			</div>
 			</div>
 
