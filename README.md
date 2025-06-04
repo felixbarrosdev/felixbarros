@@ -20,7 +20,7 @@ felixbarros/
 ├── assets/
 │   ├── css/input.css          # Entrada para Tailwind
 │   └── build/style.css        # Generado automáticamente
-├── templates/                 # Vistas parciales
+├── parts/                     # Vistas parciales
 ├── functions.php              # Configuración del tema
 ├── header.php / footer.php    # Estructura principal
 ├── index.php / page.php       # Plantillas básicas
