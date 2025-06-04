@@ -5,8 +5,7 @@
  * @package felixbarros
  */
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -16,11 +15,12 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> class="min-h-screen flex flex-col">
+<?php wp_body_open(); ?>
 <header class="bg-primary text-white px-4 py-3 shadow-md">
 	<div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap md:flex-nowrap">
 	  
 		<!-- Logo horizontal -->
-		<a href="/" class="text-white font-title text-xl md:text-2xl tracking-wide">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="text-white font-title text-xl md:text-2xl tracking-wide">
 		<div class="flex items-center gap-2">
 			<span class="text-white font-title text-2xl font-black tracking-tight">Felix Barros</span>
 			<span class="w-px h-5 bg-white opacity-30"></span>
