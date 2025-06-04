@@ -19,7 +19,8 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - run: npx semantic-release
+      - id: semantic_release
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
       # Capturamos el tag creado para el job de deploy
