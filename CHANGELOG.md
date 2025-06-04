@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.8...v1.1.0) (2025-06-04)
+
+
+### Features
+
+* **frontend:** integrate Highlight.js ([2d0fe20](https://github.com/felixbarrosdev/felixbarros/commit/2d0fe205dc67781c4baa7773b15719a07100c7f2))
+
 ## [1.0.8](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.7...v1.0.8) (2025-06-04)
 
 
