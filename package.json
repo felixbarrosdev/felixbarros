@@ -4,7 +4,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "prepare": "husky install",
-    "test": "echo \"No hay pruebas definidas\" && exit 0",
+    "test": "vendor/bin/phpunit",
     "release": "standard-version --config changelog.config.js",
     "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --watch",
     "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --minify"
