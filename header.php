@@ -24,7 +24,7 @@
 		<div class="flex items-center gap-2">
 			<span class="text-white font-title text-2xl font-black tracking-tight">Felix Barros</span>
 			<span class="w-px h-5 bg-white opacity-30"></span>
-			<span class="text-accent text-lg font-semibold">DEV</span>
+                        <span id="typed-dev" class="text-accent text-lg font-semibold">DEV</span>
 		</div>
 		</a>
 

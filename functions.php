@@ -58,10 +58,19 @@ function felixbarros_enqueue_assets() {
         );
         wp_add_inline_script( 'highlightjs', 'document.addEventListener("DOMContentLoaded",function(){hljs.highlightAll();});' );
 
+        // typed.js para animar texto en el header
+        wp_enqueue_script(
+                'typedjs',
+                'https://cdn.jsdelivr.net/npm/typed.js@2.0.16',
+                array(),
+                '2.0.16',
+                true
+        );
+
         wp_enqueue_script(
                 'main-js',
                 get_template_directory_uri() . '/assets/js/main.js',
-                array(),
+                array( 'typedjs' ),
                 filemtime( get_template_directory() . '/assets/js/main.js' ),
                 true
         );
