@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.2.0...v1.2.1) (2025-06-06)
+
+
+### Bug Fixes
+
+* **theme:** correct Typed.js CDN path ([bff856f](https://github.com/felixbarrosdev/felixbarros/commit/bff856fe5cb3eab4252b93f9f44673331b09f15a))
+
 # [1.2.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.1.1...v1.2.0) (2025-06-06)
 
 ### Bug Fixes
