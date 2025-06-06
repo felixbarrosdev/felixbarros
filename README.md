@@ -48,7 +48,14 @@ npm run dev
 npm run build
 ```
 
-4. Activar el tema desde el panel de WordPress
+4. Ejecutar linting y formateo (opcional):
+
+```bash
+npm run lint
+npm run format
+```
+
+5. Activar el tema desde el panel de WordPress
 
 ---
 
