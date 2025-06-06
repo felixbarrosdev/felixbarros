@@ -13,6 +13,11 @@ body {
 pre.wp-block-code {
   @apply my-6 p-0 border-0;
 }
-pre.wp-block-code code {
+pre.wp-block-code code.hljs {
   @apply block overflow-x-auto rounded-md p-4 m-0 border border-gray-700 bg-transparent;
+}
+
+/* Remove default background from highlight.js */
+code.hljs {
+  @apply bg-transparent;
 }
