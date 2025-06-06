@@ -8,11 +8,3 @@
 body {
   @apply font-body text-dark bg-white leading-relaxed;
 }
-
-/* Style adjustments for highlight.js code blocks */
-pre.wp-block-code {
-  @apply my-6 p-0 border-0;
-}
-pre.wp-block-code code {
-  @apply block overflow-x-auto rounded-md p-4 m-0 border border-gray-700 bg-transparent;
-}
