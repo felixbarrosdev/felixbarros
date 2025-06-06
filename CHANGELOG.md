@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.1.1...v1.2.0) (2025-06-06)
+
+
+### Features
+
+* **header:** add typing effect with typed.js ([5d7d5d6](https://github.com/felixbarrosdev/felixbarros/commit/5d7d5d6c3d898c0002b6315ac4a249bc3c29ae71))
+
 ## [1.1.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.1.0...v1.1.1) (2025-06-06)
 
 
