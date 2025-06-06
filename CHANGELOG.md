@@ -1,5 +1,9 @@
 # [1.2.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.1.1...v1.2.0) (2025-06-06)
 
+### Bug Fixes
+
+* update Typed.js CDN path to avoid MIME type error
+
 
 ### Features
 

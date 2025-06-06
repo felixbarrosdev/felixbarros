@@ -60,8 +60,8 @@ function felixbarros_enqueue_assets() {
 
         // typed.js para animar texto en el header
         wp_enqueue_script(
-                'typedjs',
-                'https://cdn.jsdelivr.net/npm/typed.js@2.0.16',
+               'typedjs',
+               'https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.min.js',
                 array(),
                 '2.0.16',
                 true
