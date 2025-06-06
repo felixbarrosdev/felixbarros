@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.1.0...v1.1.1) (2025-06-06)
+
+
+### Bug Fixes
+
+* corregir typo en comentario de ruta del servidor ([f8316d2](https://github.com/felixbarrosdev/felixbarros/commit/f8316d27af6f7e865288542b77ac7b3492229840))
+
 # [1.1.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.0.8...v1.1.0) (2025-06-04)
 
 
