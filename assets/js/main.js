@@ -1,10 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof Typed !== 'undefined') {
+  const typedEl = document.getElementById('typed-dev');
+
+  if (!typedEl) {
+    return;
+  }
+
+  if (typeof Typed !== 'undefined' && !localStorage.getItem('typedShown')) {
     new Typed('#typed-dev', {
-      strings: ['DEV'],
-      typeSpeed: 80,
-      backSpeed: 40,
-      loop: true
+      strings: [
+        'DEV',
+        'Backend Engineer',
+        'Senior PHP Developer',
+        'Desarrollador full stack',
+        'DEV'
+      ],
+      typeSpeed: 100,
+      backSpeed: 60,
+      backDelay: 1500,
+      loop: false,
+      onComplete: () => {
+        localStorage.setItem('typedShown', 'true');
+      }
     });
+  } else {
+    typedEl.textContent = 'DEV';
   }
 });
