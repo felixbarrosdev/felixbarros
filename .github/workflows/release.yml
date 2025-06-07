@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --prefer-dist --dev
       - id: semantic_release
         run: npx semantic-release
         env:
