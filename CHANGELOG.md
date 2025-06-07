@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.3.0...v1.3.1) (2025-06-07)
+
+
+### Bug Fixes
+
+* correct code block css selectors ([2679e84](https://github.com/felixbarrosdev/felixbarros/commit/2679e84871192970efdaecbd9a378a629288ff11))
+* unify code block styles ([5ae4862](https://github.com/felixbarrosdev/felixbarros/commit/5ae4862c31ef559526b4a3ef2afad4eb81b90515))
+* unify code block styles for highlight.js ([79903c2](https://github.com/felixbarrosdev/felixbarros/commit/79903c211b79e9b217e2e60de520e9be0154b5f1))
+
 # [1.3.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.2.1...v1.3.0) (2025-06-06)
 
 
