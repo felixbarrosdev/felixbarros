@@ -8,3 +8,12 @@
 body {
   @apply font-body text-dark bg-white leading-relaxed;
 }
+
+/* Style adjustments for highlight.js code blocks */
+.wp-block-code {
+  @apply my-6 p-0 border-0 bg-transparent;
+}
+
+.wp-block-code code.hljs {
+  @apply block overflow-x-auto rounded-md p-4 m-0 border-0 bg-transparent;
+}
