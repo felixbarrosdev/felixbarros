@@ -45,7 +45,7 @@ function felixbarros_enqueue_assets() {
         // Highlight.js para resaltar código
         wp_enqueue_style(
                 'highlightjs-style',
-                'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css',
+                'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css',
                 array(),
                 '11.9.0'
         );
@@ -76,3 +76,24 @@ function felixbarros_enqueue_assets() {
         );
 }
 add_action( 'wp_enqueue_scripts', 'felixbarros_enqueue_assets' );
+
+/**
+ * Asegura que los bloques de código tengan la clase `hljs`.
+ *
+ * @param string $content Contenido del post.
+ * @return string
+ */
+function felixbarros_add_hljs_class( $content ) {
+       return preg_replace_callback(
+               '/<code class="([^"]*language-[^"]*)"/i',
+               function ( $matches ) {
+                       $classes = explode( ' ', $matches[1] );
+                       if ( ! in_array( 'hljs', $classes, true ) ) {
+                               array_unshift( $classes, 'hljs' );
+                       }
+                       return '<code class="' . implode( ' ', $classes ) . '"';
+               },
+               $content
+       );
+}
+add_filter( 'the_content', 'felixbarros_add_hljs_class' );

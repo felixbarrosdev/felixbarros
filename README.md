@@ -10,7 +10,7 @@ Este es el tema oficial del blog personal [felixbarros.dev](https://felixbarros.
 - 🎨 Diseño responsivo y tipografías personalizadas
 - 🧠 Paleta de colores personalizada basada en branding personal
 - 🖋️ Soporte para Gutenberg y tipografía con `@tailwindcss/typography`
-- 🖍️ Resaltado de código con [Highlight.js](https://highlightjs.org/)
+- 🖍️ Resaltado de código con [Highlight.js](https://highlightjs.org/) usando el tema **Atom One Dark**
 
 ---
 
