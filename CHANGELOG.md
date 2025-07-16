@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.3.1...v1.4.0) (2025-07-16)
+
+
+### Features
+
+* add complete comments system to blog posts ([142c93a](https://github.com/felixbarrosdev/felixbarros/commit/142c93a7387211f849b1e6fc6f55e036d073d7f0))
+
 ## [1.3.1](https://github.com/felixbarrosdev/felixbarros/compare/v1.3.0...v1.3.1) (2025-06-07)
 
 
