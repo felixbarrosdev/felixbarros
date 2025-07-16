@@ -18,6 +18,62 @@ get_header(); ?>
 		<?php the_content(); ?>
 	</div>
 
+	<!-- Sección de comentarios -->
+	<div class="mt-12 pt-8 border-t border-gray-200">
+		<?php
+		// Mostrar comentarios existentes
+		if ( have_comments() ) : ?>
+			<h3 class="text-2xl font-title font-bold mb-6 text-dark">
+				<?php
+				$comments_number = get_comments_number();
+				if ( $comments_number == 1 ) {
+					echo '1 Comentario';
+				} else {
+					echo $comments_number . ' Comentarios';
+				}
+				?>
+			</h3>
+
+			<div class="space-y-6 mb-8">
+				<?php
+				wp_list_comments( array(
+					'style'       => 'div',
+					'short_ping'  => true,
+					'avatar_size' => 48,
+					'callback'    => 'felixbarros_comment_callback',
+				) );
+				?>
+			</div>
+
+			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+				<div class="navigation comment-navigation">
+					<div class="nav-links">
+						<?php
+						if ( $prev_link = get_previous_comments_link( '← Comentarios anteriores' ) ) {
+							echo '<div class="nav-previous">' . $prev_link . '</div>';
+						}
+						if ( $next_link = get_next_comments_link( 'Comentarios siguientes →' ) ) {
+							echo '<div class="nav-next">' . $next_link . '</div>';
+						}
+						?>
+					</div>
+				</div>
+			<?php endif; ?>
+
+		<?php endif; ?>
+
+		<?php
+		// Mostrar formulario de comentarios
+		if ( comments_open() ) : ?>
+			<div class="comment-form-wrapper">
+				<h3 class="text-2xl font-title font-bold mb-6 text-dark">Deja tu comentario</h3>
+				<?php comment_form( felixbarros_comment_form_args() ); ?>
+			</div>
+		<?php elseif ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+			<p class="no-comments text-gray-600">Los comentarios están cerrados.</p>
+		<?php endif; ?>
+	</div>
+
 	</article>
 </div>
 
