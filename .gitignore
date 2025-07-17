@@ -1,2 +1,41 @@
-node_modules
+# Dependencies
+node_modules/
 vendor/
+
+# Test reports and artifacts
+test-results/
+playwright-report/
+*.png
+!assets/images/*.png
+!screenshot.png
+
+# Analysis reports
+ux-analysis-*.png
+ux-analysis-*.json
+ux-analysis-*.md
+comment-form-screenshot.png
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cache files
+.cache/
+.temp/
