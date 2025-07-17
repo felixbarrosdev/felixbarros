@@ -9,7 +9,11 @@
     "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --watch",
     "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --minify",
     "screenshot": "node scripts/capture-screenshot.js",
-    "update-version": "node scripts/update-version.js"
+    "update-version": "node scripts/update-version.js",
+    "ux-analysis": "node scripts/ux-analysis.js",
+    "test:usability": "npx playwright test --config=playwright.config.js",
+    "test:usability:headed": "npx playwright test --config=playwright.config.js --headed",
+    "test:usability:ui": "npx playwright test --config=playwright.config.js --ui"
   },
   "keywords": [],
   "author": "",
