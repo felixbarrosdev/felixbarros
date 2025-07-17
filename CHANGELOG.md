@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.4.0...v1.5.0) (2025-07-17)
+
+
+### Features
+
+* agregar automatización para captura de screenshots con Playwright ([c67ecd5](https://github.com/felixbarrosdev/felixbarros/commit/c67ecd508ff93ff75c63d96b507bc935a1e0567c))
+
 # [1.4.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.3.1...v1.4.0) (2025-07-16)
 
 
