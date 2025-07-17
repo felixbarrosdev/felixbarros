@@ -54,9 +54,9 @@ npm run build
 
 ## 📸 Screenshot del tema
 
-El tema incluye automatización para generar screenshots usando Playwright.
+El tema incluye funcionalidad para generar screenshots usando Playwright de manera manual.
 
-### Captura manual local
+### Captura manual
 
 **Requisitos previos:**
 - WordPress corriendo en `http://localhost:8000/`
@@ -74,10 +74,6 @@ node scripts/capture-screenshot.js
 ```
 
 El screenshot se guarda automáticamente como `screenshot.png` en la raíz del tema con las dimensiones exactas requeridas por WordPress (880x660px).
-
-### Automatización en GitHub Actions
-
-El screenshot se actualiza automáticamente en cada push a la rama `main` usando el workflow `.github/workflows/screenshot.yml`.
 
 ---
 
