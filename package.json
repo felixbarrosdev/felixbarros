@@ -8,7 +8,8 @@
     "release": "standard-version --config changelog.config.js",
     "dev": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --watch",
     "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/build/style.css --minify",
-    "screenshot": "node scripts/capture-screenshot.js"
+    "screenshot": "node scripts/capture-screenshot.js",
+    "update-version": "node scripts/update-version.js"
   },
   "keywords": [],
   "author": "",

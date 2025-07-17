@@ -77,6 +77,31 @@ El screenshot se guarda automáticamente como `screenshot.png` en la raíz del t
 
 ---
 
+## 🔄 Gestión de versiones
+
+El tema mantiene automáticamente sincronizada la versión en `style.css` con los tags de Git.
+
+### Sincronización automática
+
+- Cada push a `main` ejecuta el workflow de release que genera un nuevo tag usando semantic-release
+- Automáticamente actualiza la versión en `style.css` para que coincida con el tag generado
+- El cambio se commitea y pushea automáticamente al repositorio
+
+### Actualización manual
+
+Si necesitas sincronizar manualmente la versión:
+
+```bash
+npm run update-version
+```
+
+Este comando:
+- Obtiene el último tag de Git
+- Actualiza la línea `Version:` en `style.css`
+- Mantiene la coherencia entre el repositorio y la metadata de WordPress
+
+---
+
 ## 🎨 Personalización
 
 - Fuentes: [Montserrat](https://fonts.google.com/specimen/Montserrat), [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans)
