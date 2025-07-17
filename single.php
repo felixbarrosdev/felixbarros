@@ -10,11 +10,11 @@ get_header(); ?>
 <div class="flex-1 flex items-start justify-center px-4">
 	<article class="max-w-3xl w-full py-12 text-dark font-body">
 
-	<h1 class="text-3xl md:text-5xl font-title font-bold mb-6">
+	<h1 class="text-5xl font-heading font-bold mb-6">
 		<?php the_title(); ?>
 	</h1>
 
-	<div class="prose prose-lg prose-headings:font-title prose-headings:text-dark max-w-none">
+	<div class="prose prose-lg prose-headings:font-heading prose-headings:text-dark max-w-none">
 		<?php the_content(); ?>
 	</div>
 
@@ -23,7 +23,7 @@ get_header(); ?>
 		<?php
 		// Mostrar comentarios existentes
 		if ( have_comments() ) : ?>
-			<h3 class="text-2xl font-title font-bold mb-6 text-dark">
+			<h3 class="text-2xl font-heading font-bold mb-6 text-dark">
 				<?php
 				$comments_number = get_comments_number();
 				if ( $comments_number == 1 ) {
@@ -66,7 +66,6 @@ get_header(); ?>
 		// Mostrar formulario de comentarios
 		if ( comments_open() ) : ?>
 			<div class="comment-form-wrapper">
-				<h3 class="text-2xl font-title font-bold mb-6 text-dark">Deja tu comentario</h3>
 				<?php comment_form( felixbarros_comment_form_args() ); ?>
 			</div>
 		<?php elseif ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>

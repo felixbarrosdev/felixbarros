@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600&family=JetBrains+Mono:wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,50 @@
 /* Custom base styles */
 body {
   @apply font-body text-dark bg-white leading-relaxed;
+}
+
+/* Improved typography hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-bold leading-tight;
+}
+
+h1 { @apply text-5xl; }
+h2 { @apply text-4xl; }
+h3 { @apply text-3xl; }
+h4 { @apply text-2xl; }
+h5 { @apply text-xl; }
+h6 { @apply text-lg; }
+
+/* Improved contrast for better accessibility */
+.site-header {
+  @apply text-white bg-dark-900;
+}
+
+/* Better contrast for navigation and links */
+.main-navigation a {
+  @apply text-dark-100 hover:text-white;
+}
+
+/* Code blocks with mono font */
+code, pre {
+  @apply font-mono;
+}
+
+/* Success, warning, error states */
+.alert-success {
+  @apply bg-success text-white;
+}
+
+.alert-warning {
+  @apply bg-warning text-white;
+}
+
+.alert-error {
+  @apply bg-error text-white;
+}
+
+.alert-info {
+  @apply bg-info text-white;
 }
 
 /* Style adjustments for highlight.js code blocks */

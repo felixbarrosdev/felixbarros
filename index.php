@@ -36,7 +36,7 @@ get_header(); ?>
 
 			<!-- Contenido -->
 			<div class="flex-1">
-			<h2 class="text-2xl md:text-3xl font-title font-bold mb-2">
+			<h2 class="text-3xl font-heading font-bold mb-2">
 				<a href="<?php the_permalink(); ?>" class="text-primary hover:text-accent transition-colors">
 				<?php the_title(); ?>
 				</a>
