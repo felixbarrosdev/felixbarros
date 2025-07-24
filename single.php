@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="flex-1 flex items-start justify-center px-4">
 	<article class="max-w-3xl w-full py-12 text-dark font-body">
 
-	<h1 class="text-5xl font-heading font-bold mb-6">
+	<h1 class="text-3xl md:text-5xl font-heading font-bold mb-6">
 		<?php the_title(); ?>
 	</h1>
 
