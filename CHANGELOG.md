@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.5.0...v1.6.0) (2025-07-24)
+
+
+### Bug Fixes
+
+* corrige clases responsive de Tailwind para menú hamburguesa ([89e6150](https://github.com/felixbarrosdev/felixbarros/commit/89e6150602ea152046d04f52b656ea004fa917a9))
+
+
+### Features
+
+* mejora navegación responsive con menú hamburguesa móvil ([07c499a](https://github.com/felixbarrosdev/felixbarros/commit/07c499aab4bc3370d1fa6b591f8dc29ee668d3cb))
+
 # [1.5.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.4.0...v1.5.0) (2025-07-17)
 
 
