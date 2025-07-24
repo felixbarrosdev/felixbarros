@@ -31,7 +31,19 @@ module.exports = {
       'block',
       'px-4',
       'py-3',
-      'hover:bg-dark-700'
+      'hover:bg-dark-700',
+      'text-3xl',
+      'text-2xl',
+      'text-xl',
+      'text-lg',
+      'text-base',
+      'text-sm',
+      'md:text-5xl',
+      'md:text-4xl',
+      'md:text-3xl',
+      'md:text-2xl',
+      'md:text-xl',
+      'md:text-lg'
     ],
     theme: {
       extend: {
