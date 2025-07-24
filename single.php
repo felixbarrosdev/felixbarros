@@ -8,9 +8,10 @@
 get_header(); ?>
 
 <div class="flex-1 flex items-start justify-center px-4">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article class="max-w-3xl w-full py-12 text-dark font-body">
 
-	<h1 class="text-5xl font-heading font-bold mb-6">
+	<h1 class="text-3xl md:text-5xl font-heading font-bold mb-6">
 		<?php the_title(); ?>
 	</h1>
 
@@ -19,13 +20,19 @@ get_header(); ?>
 	</div>
 
 	<!-- Sección de comentarios -->
-	<div class="mt-12 pt-8 border-t border-gray-200">
+	<div class="comments-area mt-12 pt-8 border-t border-gray-200" id="comments">
 		<?php
+		// Cargar comentarios para el post actual
+		$comments = get_comments(array(
+			'post_id' => get_the_ID(),
+			'status' => 'approve'
+		));
+		
 		// Mostrar comentarios existentes
-		if ( have_comments() ) : ?>
+		if ( !empty($comments) ) : ?>
 			<h3 class="text-2xl font-heading font-bold mb-6 text-dark">
 				<?php
-				$comments_number = get_comments_number();
+				$comments_number = count($comments);
 				if ( $comments_number == 1 ) {
 					echo '1 Comentario';
 				} else {
@@ -34,14 +41,12 @@ get_header(); ?>
 				?>
 			</h3>
 
-			<div class="space-y-6 mb-8">
+			<div class="comment-list space-y-6 mb-8">
 				<?php
-				wp_list_comments( array(
-					'style'       => 'div',
-					'short_ping'  => true,
-					'avatar_size' => 48,
-					'callback'    => 'felixbarros_comment_callback',
-				) );
+				// Mostrar cada comentario usando la función personalizada
+				foreach ( $comments as $comment ) {
+					felixbarros_comment_callback( $comment, array(), 1 );
+				}
 				?>
 			</div>
 
@@ -74,6 +79,7 @@ get_header(); ?>
 	</div>
 
 	</article>
+	<?php endwhile; endif; ?>
 </div>
 
 <?php get_footer(); ?>

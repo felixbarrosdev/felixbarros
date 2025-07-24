@@ -14,16 +14,33 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-heading font-bold leading-tight;
 }
 
-h1 { @apply text-5xl; }
-h2 { @apply text-4xl; }
-h3 { @apply text-3xl; }
-h4 { @apply text-2xl; }
-h5 { @apply text-xl; }
-h6 { @apply text-lg; }
+h1 { @apply text-3xl md:text-5xl; }
+h2 { @apply text-2xl md:text-4xl; }
+h3 { @apply text-xl md:text-3xl; }
+h4 { @apply text-lg md:text-2xl; }
+h5 { @apply text-base md:text-xl; }
+h6 { @apply text-sm md:text-lg; }
 
 /* Improved contrast for better accessibility */
 .site-header {
   @apply text-white bg-dark-900;
+}
+
+/* WordPress admin bar compatibility */
+.admin-bar .site-header {
+  @apply mt-8;
+}
+
+@media screen and (max-width: 782px) {
+  .admin-bar .site-header {
+    @apply mt-12;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-bar .site-header {
+    @apply mt-12;
+  }
 }
 
 /* Better contrast for navigation and links */
