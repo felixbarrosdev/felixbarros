@@ -26,6 +26,23 @@ h6 { @apply text-sm md:text-lg; }
   @apply text-white bg-dark-900;
 }
 
+/* WordPress admin bar compatibility */
+.admin-bar .site-header {
+  @apply mt-8;
+}
+
+@media screen and (max-width: 782px) {
+  .admin-bar .site-header {
+    @apply mt-12;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-bar .site-header {
+    @apply mt-12;
+  }
+}
+
 /* Better contrast for navigation and links */
 .main-navigation a {
   @apply text-dark-100 hover:text-white;

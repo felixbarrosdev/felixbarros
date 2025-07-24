@@ -18,6 +18,7 @@
 function felixbarros_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
 	register_nav_menus(
 		array(
 			'main_menu' => 'Menú principal',
