@@ -6,7 +6,32 @@ module.exports = {
     content: [
       "./*.php",
       "./parts/**/*.php",
-      "./templates/**/*.php"
+      "./templates/**/*.php",
+      "./assets/js/**/*.js"
+    ],
+    safelist: [
+      'hidden',
+      'md:hidden',
+      'md:block',
+      'flex',
+      'flex-col',
+      'justify-center',
+      'items-center',
+      'space-y-1',
+      'space-y-2',
+      'mt-4',
+      'pb-4',
+      'pt-4',
+      'border-t',
+      'border-dark-700',
+      'focus:outline-none',
+      'focus:ring-2',
+      'focus:ring-accent-light',
+      'rounded',
+      'block',
+      'px-4',
+      'py-3',
+      'hover:bg-dark-700'
     ],
     theme: {
       extend: {
