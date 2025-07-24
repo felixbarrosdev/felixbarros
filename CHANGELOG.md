@@ -1,3 +1,20 @@
+# [1.7.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.6.0...v1.7.0) (2025-07-24)
+
+
+### Bug Fixes
+
+* aplicar tamaño de fuente responsive al h1 en plantilla single.php ([7358d11](https://github.com/felixbarrosdev/felixbarros/commit/7358d116ce0e820accfb28342c6287bb61c19632))
+* corregir visualización de comentarios en single.php ([775a36f](https://github.com/felixbarrosdev/felixbarros/commit/775a36fe549aa73a4c5c87a15e79b7b9ec1a235b))
+* mejorar robustez de tests de usabilidad para comentarios ([b6a701c](https://github.com/felixbarrosdev/felixbarros/commit/b6a701c96c80ffb69db144460ce52acca35bc758))
+* mejorar sistema de comentarios y estilos CSS ([2b985bc](https://github.com/felixbarrosdev/felixbarros/commit/2b985bcb539d04863e91c86aaa192dbd0e99c451))
+* solucionar superposición de barra de administración con header ([ff4ae5a](https://github.com/felixbarrosdev/felixbarros/commit/ff4ae5af569aa2ebd9392e31beacc7486cf8da57))
+
+
+### Features
+
+* implementar header sticky con auto-hide al hacer scroll ([c842395](https://github.com/felixbarrosdev/felixbarros/commit/c842395854b34989dff721b7f5a57267a1bbe863))
+* mejora tipografía responsive para mejor UX móvil ([cf667d1](https://github.com/felixbarrosdev/felixbarros/commit/cf667d1e32bc9d9239f299ba86d097bcf41245d2))
+
 # [1.6.0](https://github.com/felixbarrosdev/felixbarros/compare/v1.5.0...v1.6.0) (2025-07-24)
 
 
