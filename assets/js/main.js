@@ -8,10 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof Typed !== 'undefined' && !localStorage.getItem('typedShown')) {
     new Typed('#typed-dev', {
       strings: [
-        'DEV',
-        'Backend Engineer',
-        'Senior PHP Developer',
-        'Desarrollador full stack',
         'DEV'
       ],
       typeSpeed: 100,
